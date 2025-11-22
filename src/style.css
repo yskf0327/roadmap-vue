@@ -3,17 +3,39 @@
   --color-text: #ffffff; /* 白 (テキスト色) */
   --color-primary: #8fbcd4; /* グレイッシュブルー */
   --color-secondary: #d19a66; /* ライトオレンジ (強調アクセント) */
+
+  --fz-base: clamp(0.875rem, 0.831rem + 0.188vw, 1rem);
+  --fz-xs: calc(var(--fz-sm) / 1.618);
+  --fz-sm: calc(var(--fz-base) / 1.618);
+  --fz-lg: calc(var(--fz-base) * 1.618);
+  --fz-xl: calc(var(--fz-lg) * 1.618);
+
+  --s-base: 0.5rem;
+  --s-sm: calc(var(--s-base) * 1);
+  --s-md: calc(var(--s-base) * 2);
+  --s-lg: calc(var(--s-base) * 3);
+  --s-xl: calc(var(--s-base) * 5);
+  --s-2xl: calc(var(--s-base) * 8);
+  --s-3xl: calc(var(--s-base) * 13);
 }
 body {
   background-color: var(--color-background);
   color: var(--color-text);
+  font-size: var(--fz-base);
 }
 .container {
   width: min(92%, 980px);
   margin-inline: auto;
 }
-.roadmap {
-  display: flex;
-  flex-direction: column;
-  gap: -10%;
+
+.page-header {
+  padding-block: var(--s-md);
+  margin-block-end: var(--s-md);
+}
+.page-title {
+  text-align: center;
+  h1 {
+    font-size: var(--fz-lg);
+    margin-block-start: var(--s-sm);
+  }
 }
