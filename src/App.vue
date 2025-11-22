@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import 'destyle.css' 
+
 import phases from './data/radmap.json'
 import RoadmapPhase from './components/RoadmapPhase.vue';
 
