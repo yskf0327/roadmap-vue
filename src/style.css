@@ -1,0 +1,19 @@
+:root {
+  --color-background: #282c34; /* ダークグレー/ネイビー (メイン背景) */
+  --color-text: #ffffff; /* 白 (テキスト色) */
+  --color-primary: #8fbcd4; /* グレイッシュブルー */
+  --color-secondary: #d19a66; /* ライトオレンジ (強調アクセント) */
+}
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+.container {
+  width: min(92%, 980px);
+  margin-inline: auto;
+}
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: -10%;
+}
