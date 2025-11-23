@@ -1,41 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 :root {
-  --color-background: #282c34; /* ダークグレー/ネイビー (メイン背景) */
-  --color-text: #ffffff; /* 白 (テキスト色) */
-  --color-primary: #8fbcd4; /* グレイッシュブルー */
-  --color-secondary: #d19a66; /* ライトオレンジ (強調アクセント) */
+  /* Blue Dark Theme Palette */
+  --color-bg: #0f172a;       /* Slate 900 */
+  --color-card-bg: #1e293b;  /* Slate 800 */
+  --color-text: #f8fafc;     /* Slate 50 */
+  --color-text-muted: #94a3b8; /* Slate 400 */
+  --color-primary: #3b82f6;  /* Blue 500 */
+  --color-accent: #22d3ee;   /* Cyan 400 - More vibrant */
+  --color-line: rgba(59, 130, 246, 0.3);
+  
+  /* Spacing */
+  --s-sm: 0.5rem;
+  --s-md: 1rem;
+  --s-lg: 2rem;
+  --s-xl: 4rem;
 
-  --fz-base: clamp(0.875rem, 0.831rem + 0.188vw, 1rem);
-  --fz-xs: calc(var(--fz-sm) / 1.618);
-  --fz-sm: calc(var(--fz-base) / 1.618);
-  --fz-lg: calc(var(--fz-base) * 1.618);
-  --fz-xl: calc(var(--fz-lg) * 1.618);
-
-  --s-base: 0.5rem;
-  --s-sm: calc(var(--s-base) * 1);
-  --s-md: calc(var(--s-base) * 2);
-  --s-lg: calc(var(--s-base) * 3);
-  --s-xl: calc(var(--s-base) * 5);
-  --s-2xl: calc(var(--s-base) * 8);
-  --s-3xl: calc(var(--s-base) * 13);
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
 }
+
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-bg);
   color: var(--color-text);
-  font-size: var(--fz-base);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+
 .container {
-  width: min(92%, 980px);
+  width: min(90%, 1000px);
   margin-inline: auto;
 }
 
 .page-header {
-  padding-block: var(--s-md);
-  margin-block-end: var(--s-md);
-}
-.page-title {
+  padding-block: var(--s-xl) var(--s-lg);
   text-align: center;
-  h1 {
-    font-size: var(--fz-lg);
-    margin-block-start: var(--s-sm);
-  }
+}
+
+.page-title p {
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--s-sm);
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
