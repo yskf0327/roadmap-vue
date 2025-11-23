@@ -22,9 +22,10 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   font-size: var(--fz-base);
+  counter-reset: cnt;
 }
 .container {
-  width: min(92%, 980px);
+  width: min(96%, 1240px);
   margin-inline: auto;
 }
 

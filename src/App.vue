@@ -11,7 +11,7 @@
 
     <div class="container">
       <ol class="roadmap">
-        <RoadmapPhase v-for="(phase, index) in phases" :key="index" :phase="phase"></RoadmapPhase>
+        <RoadmapPhase v-for="(phase, index) in phases" :key="index" :phase="phase" :index="index"></RoadmapPhase>
       </ol>
     </div>
   </div>
@@ -23,10 +23,4 @@ import RoadmapPhase from './components/RoadmapPhase.vue'
 console.log(phases)
 </script>
 
-<style scoped>
-.roadmap {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-</style>
+<style scoped></style>
