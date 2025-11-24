@@ -1,7 +1,5 @@
 <template>
   <div class="timeline-item" :class="{ 'is-even': index % 2 === 0, 'is-odd': index % 2 !== 0 }">
-    <div class="timeline-node"></div>
-
     <div class="timeline-content">
       <header class="phase-header">
         <div class="phase-meta">
@@ -52,9 +50,20 @@ const formatDate = (datetime) => {
   width: 100%;
 }
 
-.timeline-node {
+.timeline-content {
+  position: relative;
+  margin-left: 50px;
+  background: linear-gradient(145deg, var(--color-card-bg), var(--color-bg));
+  padding: var(--s-lg);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content::before {
+  content: '';
   position: absolute;
-  left: 20px;
+  left: -30px;
   top: 0;
   width: 16px;
   height: 16px;
@@ -67,18 +76,9 @@ const formatDate = (datetime) => {
   transition: all 0.3s ease;
 }
 
-.timeline-item:hover .timeline-node {
+.timeline-item:hover .timeline-content::before {
   background-color: var(--color-primary);
   box-shadow: 0 0 0 4px var(--color-bg), 0 0 20px var(--color-primary);
-}
-
-.timeline-content {
-  margin-left: 50px;
-  background: linear-gradient(145deg, var(--color-card-bg), var(--color-bg));
-  padding: var(--s-lg);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .timeline-item:hover .timeline-content {
