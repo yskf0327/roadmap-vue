@@ -20,11 +20,21 @@
 
 <script setup>
 import phases from './data/roadmap.json'
+import { onMounted } from 'vue';
 import RoadmapPhase from './components/RoadmapPhase.vue'
 
 const params = new URLSearchParams(window.location.search);
 const mode = params.get('mode')
 
+onMounted(() => {
+  const currentPhase = document.querySelector('.is-current');
+  if (currentPhase) {
+    currentPhase.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  }
+})
 </script>
 
 <style scoped>
