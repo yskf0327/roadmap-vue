@@ -19,7 +19,7 @@
           </li>
         </ul>
 
-        <div v-if="phase.note" class="phase-notes">
+        <div v-if="phase.note && mode === 'teacher'" class="phase-notes">
           <p v-for="(para, i) in phase.note" :key="i">{{ para }}</p>
         </div>
       </div>
@@ -33,7 +33,8 @@ defineProps({
     type: Object,
     required: true
   },
-  index: Number
+  index: Number,
+  mode: String
 });
 
 const formatDate = (datetime) => {

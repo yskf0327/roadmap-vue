@@ -12,7 +12,7 @@
     <main class="container">
       <div class="timeline">
         <div class="timeline-line"></div>
-        <RoadmapPhase v-for="(phase, index) in phases" :key="index" :phase="phase" :index="index" />
+        <RoadmapPhase v-for="(phase, index) in phases" :key="index" :phase="phase" :index="index" :mode="mode" />
       </div>
     </main>
   </div>
@@ -21,6 +21,10 @@
 <script setup>
 import phases from './data/roadmap.json'
 import RoadmapPhase from './components/RoadmapPhase.vue'
+
+const params = new URLSearchParams(window.location.search);
+const mode = params.get('mode')
+
 </script>
 
 <style scoped>
