@@ -207,7 +207,7 @@ const formatDate = (datetime) => {
   100% {
     box-shadow:
       0 0 0 3px var(--color-bg),
-      0 0 13px var(--color-primary),
+      0 0 15px var(--color-primary),
       0 0 21px var(--color-glow-medium);
   }
 
@@ -215,7 +215,7 @@ const formatDate = (datetime) => {
     box-shadow:
       0 0 0 3px var(--color-bg),
       0 0 21px var(--color-primary),
-      0 0 21px var(--color-glow-medium);
+      0 0 34px var(--color-glow-medium);
   }
 
 }
