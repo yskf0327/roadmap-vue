@@ -10,6 +10,24 @@
   --color-accent: #22d3ee;   /* Cyan 400 - More vibrant */
   --color-line: rgba(59, 130, 246, 0.3);
   
+  /* Border & Shadow Colors */
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+  --color-border-faint: rgba(255, 255, 255, 0.03);
+  --color-border-medium: rgba(255, 255, 255, 0.1);
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-shadow-dark: rgba(0, 0, 0, 0.3);
+  --color-glow-primary: rgba(59, 130, 246, 0.5);
+  --color-glow-faint: rgba(59, 130, 246, 0.3);
+  --color-glow-soft: rgba(59, 130, 246, 0.2);
+  --color-glow-medium: rgba(59, 130, 246, 0.4);
+  
+  /* Status-specific Colors */
+  --color-completed-bg-1: rgba(34, 34, 34, 0.6);
+  --color-completed-bg-2: rgba(20, 20, 20, 0.6);
+  --color-upcoming-bg-1: rgba(34, 34, 34, 0.4);
+  --color-upcoming-bg-2: rgba(20, 20, 20, 0.4);
+  --color-upcoming-accent: rgba(251, 191, 36, 0.5);
+  
   /* Spacing */
   --s-sm: 0.5rem;
   --s-md: 1rem;

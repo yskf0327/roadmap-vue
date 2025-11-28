@@ -1,5 +1,5 @@
 <template>
-  <div class="timeline-item" :class="{ 'is-even': index % 2 === 0, 'is-odd': index % 2 !== 0 }">
+  <div class="timeline-item" :class="`is-${phase.status}`">
     <div class="timeline-content">
       <header class="phase-header">
         <div class="phase-meta">
@@ -57,7 +57,7 @@ const formatDate = (datetime) => {
   background: linear-gradient(145deg, var(--color-card-bg), var(--color-bg));
   padding: var(--s-lg);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--color-border-subtle);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -73,7 +73,7 @@ const formatDate = (datetime) => {
   border-radius: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  box-shadow: 0 0 0 4px var(--color-bg), 0 0 10px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 0 4px var(--color-bg), 0 0 10px var(--color-glow-primary);
   transition: all 0.3s ease;
 }
 
@@ -84,8 +84,8 @@ const formatDate = (datetime) => {
 
 .timeline-item:hover .timeline-content {
   transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px var(--color-shadow-dark);
+  border-color: var(--color-border-medium);
 }
 
 .phase-meta {
@@ -134,7 +134,89 @@ const formatDate = (datetime) => {
 .phase-notes {
   font-size: 0.9rem;
   color: var(--color-text-muted);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--color-border-medium);
   padding-top: var(--s-md);
+}
+
+/* Status-based styling */
+.timeline-item.is-completed {
+  opacity: 0.6;
+}
+
+.timeline-item.is-completed .timeline-content {
+  background: linear-gradient(145deg, var(--color-completed-bg-1), var(--color-completed-bg-2));
+  border-color: var(--color-border-faint);
+}
+
+.timeline-item.is-completed .timeline-content::before {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px var(--color-bg), 0 0 8px var(--color-glow-faint);
+}
+
+.timeline-item.is-completed .phase-number {
+  color: var(--color-text-muted);
+}
+
+.timeline-item.is-completed .phase-title {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  color: var(--color-text-muted);
+}
+
+.timeline-item.is-current .timeline-content {
+  background: linear-gradient(145deg, var(--color-card-bg), var(--color-bg));
+  border: 2px solid var(--color-accent);
+  box-shadow: 0 0 30px var(--color-glow-soft);
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.timeline-item.is-current .timeline-content::before {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px var(--color-bg), 0 0 15px var(--color-primary);
+}
+
+.timeline-item.is-current .phase-number {
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.timeline-item.is-current .phase-title {
+  color: var(--color-primary);
+}
+
+.timeline-item.is-upcoming .timeline-content {
+  background: linear-gradient(145deg, var(--color-upcoming-bg-1), var(--color-upcoming-bg-2));
+  border-color: var(--color-border-subtle);
+}
+
+.timeline-item.is-upcoming .timeline-content::before {
+  background-color: var(--color-bg);
+  border-color: var(--color-border-light);
+  box-shadow: 0 0 0 4px var(--color-bg);
+}
+
+.timeline-item.is-upcoming .phase-number {
+  color: var(--color-upcoming-accent);
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 3px var(--color-bg),
+      0 0 13px var(--color-primary),
+      0 0 21px var(--color-glow-medium);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 3px var(--color-bg),
+      0 0 21px var(--color-primary),
+      0 0 21px var(--color-glow-medium);
+  }
+
 }
 </style>

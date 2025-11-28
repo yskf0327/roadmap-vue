@@ -3,6 +3,7 @@
     "title": "Webページレイアウト制作 基礎",
     "start": "2025-11-11",
     "end": "2025-12-01",
+    "status": "completed",
     "items": [
       "HTML/CSSテキスト",
       "Figma(カンプ閲覧のみ)",
@@ -16,6 +17,7 @@
     "title": "Webデザインツール実習",
     "start": "2025-12-02",
     "end": "2025-12-18",
+    "status": "current",
     "items": [
       "Figmaテキスト",
       "トレース課題",
@@ -29,6 +31,7 @@
     "title": "Webページレイアウト制作 応用",
     "start": "2025-12-18",
     "end": "2026-01-16",
+    "status": "upcoming",
     "items": [
       "Git/Github入門",
       "HTML/CSS応用",
@@ -43,6 +46,7 @@
     "title": "Webクリエイター能力認定試験対策",
     "start": "2026-01-07",
     "end": "2026-01-09",
+    "status": "upcoming",
     "items": [
       "模擬問題"
     ],
@@ -54,6 +58,7 @@
     "title": "システム開発概論/環境構築概要・開発ツール概要",
     "start": "2026-01-19",
     "end": "2026-01-20",
+    "status": "upcoming",
     "items": [
       "PHPのテキスト(1章、2章、3章)",
       "Webシステム・アプリについて",
@@ -68,6 +73,7 @@
     "title": "フロントエンドプログラミング",
     "start": "2026-01-22",
     "end": "2026-02-04",
+    "status": "upcoming",
     "items": [
       "JavaScriptテキスト",
       "餃子FESイベントページ・フォーム改修"
@@ -81,6 +87,7 @@
     "title": "サーバサイドプログラミング",
     "start": "2026-02-05",
     "end": "2026-03-11",
+    "status": "upcoming",
     "items": [
       "PHPテキスト",
       "SQL(DML)",
@@ -94,6 +101,7 @@
     "title": "データベース設計",
     "start": "2026-03-11",
     "end": "2026-03-13",
+    "status": "upcoming",
     "items": [
       "DB概論",
       "RDBの設計と正規化",
@@ -107,6 +115,7 @@
     "title": "WordPress実践",
     "start": "2026-03-13",
     "end": "2026-04-06",
+    "status": "upcoming",
     "items": [
       "WordPressテキスト",
       "カスタム投稿",
@@ -120,6 +129,7 @@
     "title": "総合実制作",
     "start": "2026-04-06",
     "end": "2026-04-27",
+    "status": "upcoming",
     "items": [
       "未定"
     ],
