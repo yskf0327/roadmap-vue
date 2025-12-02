@@ -138,6 +138,10 @@ const formatDate = (datetime) => {
   padding-top: var(--s-md);
 }
 
+.phase-notes p+p {
+  margin-block-start: 0.8rem;
+}
+
 /* Status-based styling */
 .timeline-item.is-completed {
   opacity: 0.6;
