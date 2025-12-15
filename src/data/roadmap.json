@@ -36,17 +36,17 @@
     "end": "2026-01-16",
     "status": "upcoming",
     "items": [
-      "Git/Github入門①",
-      "CSS応用: カスタムプロパティ(CSS変数),何番目系疑似クラス,calc()関数など",
-      "レスポンシブデザイン応用(Fluid Shape/Typography): clamp(),min(),max(),@containerなど",
-      "CSS設計: BEM、FLOCSS等の設計方法について",
-      "餃子FESイベントページ実装(静的)"
+      "Git/Github入門 基礎編: インストール, 基本操作, Github連携",
+      "CSS応用: カスタムプロパティ, 疑似クラス(nth-child等)",
+      "モダンCSS応用: 疑似クラス(:has/:is/:where), Grid(auto-fill/subgrid)",
+      "HTML応用: SEO/OGP設定 (テキスト15章 p.276～)",
+      "レスポンシブ応用: clamp(), @container",
+      "CSS設計(BEM/FLOCSS)・総合演習"
     ],
     "note": [
       "Git/Githubの基礎を実施。続きは次の科目で。",
       "FTPも触りたいが環境の用意が難しい。",
-      "餃子FESのグループは前フェーズから継続。最終日に成果物の発表を行い考査(実技)とする。",
-      "Sassまで触れるか検討"
+      "餃子FESのグループは前フェーズから継続。最終日に成果物の発表を行い考査(実技)とする。"
     ]
   },
   {
