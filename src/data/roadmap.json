@@ -17,7 +17,7 @@
     "title": "Webデザインツール実習",
     "start": "2025-12-02",
     "end": "2025-12-18",
-    "status": "current",
+    "status": "completed",
     "items": [
       "デザイン概論",
       "Web制作のワークフローとサイト設計",
@@ -34,14 +34,15 @@
     "title": "Webページレイアウト制作 応用",
     "start": "2025-12-18",
     "end": "2026-01-16",
-    "status": "upcoming",
+    "status": "current",
     "items": [
       "Git/Github入門 基礎編: インストール, 基本操作, Github連携",
       "CSS応用: カスタムプロパティ, 疑似クラス(nth-child等)",
       "モダンCSS応用: 疑似クラス(:has/:is/:where), Grid(auto-fill/subgrid)",
       "HTML応用: SEO/OGP設定 (テキスト15章 p.276～)",
       "レスポンシブ応用: clamp(), @container",
-      "CSS設計(BEM/FLOCSS)・総合演習"
+      "CSS設計(BEM/FLOCSS)",
+      "ふくおか餃子FESコーディング(グループワーク)"
     ],
     "note": [
       "Git/Githubの基礎を実施。続きは次の科目で。",
