@@ -37,15 +37,16 @@
     "status": "current",
     "items": [
       "Git/Github入門 基礎編: インストール, 基本操作, Github連携",
-      "CSS応用: カスタムプロパティ, 疑似クラス(nth-child等)",
+      "CSS応用: カスタムプロパティ, 疑似クラス(nth-child,nth-of-type,required,checked,selected etc...)",
       "モダンCSS応用: 疑似クラス(:has/:is/:where), Grid(auto-fill/subgrid)",
       "HTML応用: SEO/OGP設定 (テキスト15章 p.276～)",
       "レスポンシブ応用: clamp(), @container",
       "CSS設計(BEM/FLOCSS)",
+      "Git/Github入門②",
       "ふくおか餃子FESコーディング(グループワーク)"
     ],
     "note": [
-      "Git/Githubの基礎を実施。続きは次の科目で。",
+      "Git/Githubの基礎を実施。",
       "FTPも触りたいが環境の用意が難しい。",
       "餃子FESのグループは前フェーズから継続。最終日に成果物の発表を行い考査(実技)とする。"
     ]
@@ -68,12 +69,10 @@
     "end": "2026-01-20",
     "status": "upcoming",
     "items": [
-      "Git/Github入門②",
       "WebサイトとWebアプリ・システム",
-      "開発環境構築(XAMPP,VSCode拡張機能追加)"
+      "開発環境構築(XAMPP,VSCode拡張機能追加,node.js,npm)"
     ],
     "note": [
-      "Git/Githubの続き",
       "XAMPPのインストールを行い、以後、基本的にXAMPPのApacheサーバー上で動作確認をする(LiveServerは封印)。"
     ]
   },
