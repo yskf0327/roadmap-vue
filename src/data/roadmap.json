@@ -34,10 +34,10 @@
     "title": "Webページレイアウト制作 応用",
     "start": "2025-12-18",
     "end": "2026-01-16",
-    "status": "current",
+    "status": "completed",
     "items": [
       "Git/Github入門 基礎編: インストール, 基本操作, Github連携",
-      "CSS応用: カスタムプロパティ, 疑似クラス(nth-child,nth-of-type,required,checked,selected etc...)",
+      "CSS応用: カスタムプロパティ, 疑似クラス(:nth-child,:nth-of-type,:required,:checked,:selected etc...),calc()",
       "モダンCSS応用: 疑似クラス(:has/:is/:where), Grid(auto-fill/subgrid)",
       "HTML応用: SEO/OGP設定 (テキスト15章 p.276～)",
       "レスポンシブ応用: clamp(), @container",
@@ -55,7 +55,7 @@
     "title": "Webクリエイター能力認定試験対策",
     "start": "2026-01-07",
     "end": "2026-01-09",
-    "status": "upcoming",
+    "status": "completed",
     "items": [
       "模擬問題"
     ],
@@ -67,7 +67,7 @@
     "title": "システム開発概論/環境構築概要・開発ツール概要",
     "start": "2026-01-19",
     "end": "2026-01-20",
-    "status": "upcoming",
+    "status": "current",
     "items": [
       "WebサイトとWebアプリ・システム",
       "開発環境構築(XAMPP,VSCode拡張機能追加,node.js,npm)"
@@ -80,14 +80,18 @@
     "title": "フロントエンドプログラミング",
     "start": "2026-01-22",
     "end": "2026-02-04",
-    "status": "upcoming",
+    "status": "current",
     "items": [
       "JavaScriptテキスト",
-      "餃子FESイベントページ・UI追加、フォーム改修"
+      "日付日時の取り扱い",
+      "モダンJS記法",
+      "非同期通信・API利用"
     ],
     "note": [
-      "フォームバリデーションやAPI利用によるUI/UXの実装(実技の考査としても良し？)。",
-      "jQueryはあまりやらない。余裕があるならVueを触っても良いかもしれない。"
+      "考査課題に着地できるようにカリキュラムを設定。",
+      "テキストを一通りやったら、考査課題で問われる技術+サーバサイドと関連のある技術を解説。",
+      "フレームワークはさわれないかもしれない。",
+      "終盤、福本不在日多い。"
     ]
   },
   {
