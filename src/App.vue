@@ -15,6 +15,7 @@
         <RoadmapPhase v-for="(phase, index) in phases" :key="index" :phase="phase" :index="index" :mode="mode" />
       </div>
     </main>
+    <footer class="page-footer">&copy; 2025 Yusuke Fukumoto</footer>
   </div>
 </template>
 
