@@ -5,8 +5,8 @@
         <div class="phase-meta">
           <span class="phase-number">Phase {{ index + 1 }}</span>
           <span class="phase-period">
-            <time :datetime="phase.start">{{ formatDate(phase.start) }}</time> -
-            <time :datetime="phase.end">{{ formatDate(phase.end) }}</time>
+            <time :datetime="phase.start">{{ formatDate(phase.start) }}</time>
+            <time v-if="phase.start !== phase.end" :datetime="phase.end">{{ formatDate(phase.end) }}</time>
           </span>
         </div>
         <h2 class="phase-title">{{ phase.title }}</h2>
@@ -95,6 +95,12 @@ const formatDate = (datetime) => {
   margin-bottom: var(--s-sm);
   font-size: 0.875rem;
   color: var(--color-text-muted);
+}
+
+.phase-period time:nth-of-type(2)::before {
+  content: "-";
+  display: inline-block;
+  margin-inline: 0.5em;
 }
 
 .phase-number {
